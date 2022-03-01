@@ -63,6 +63,11 @@ secondHorizontalMargin = topMargin + p.windowHeight*0.6;
   p.createCanvas(p.windowWidth, p.windowHeight);
 }
 
+   p.windowResized = function() {
+  p.resizeCanvas(p.windowWidth, p.windowHeight);
+  }
+  
+  
 p.draw = function() {
   
      if (loading) {
